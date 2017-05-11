@@ -1,13 +1,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.web.website.websiteappmcxs</groupId>
-  <artifactId>website-app-mcxs</artifactId>
+  <groupId>com.web.website.app</groupId>
+  <artifactId>website_mcxs</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>war</packaging>
-  <name>website-app-mcxs</name>
-  <description>website-app-mcxs</description>
-  
-  <!-- 项目开发者列表 -->
+   <!-- 项目开发者列表 -->
 	<developers>
 		<!-- 某个项目开发者的信息 -->
 		<developer>
@@ -324,13 +320,6 @@
 			<groupId>org.mybatis</groupId>
 			<artifactId>mybatis-spring</artifactId>
 			<version>1.3.1</version>
-		</dependency>
-
-		<!-- hadoop 包结束 -->
-		<dependency>
-			<groupId>com.web.website.payment</groupId>
-			<artifactId>website-app-payment</artifactId>
-			<version>${website-app-payment-version}</version>
 		</dependency>
 	</dependencies>
 

@@ -1,5 +1,7 @@
 package com.cn.website.mcxs.service;
 
-public interface GoodInfoService {
+import com.cn.website.mcxs.bean.GoodInfo;
 
+public interface GoodInfoService {
+	public GoodInfo getGoodInfo(long goodId);
 }
