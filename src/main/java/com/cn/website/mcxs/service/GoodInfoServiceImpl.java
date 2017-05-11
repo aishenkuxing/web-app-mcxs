@@ -14,7 +14,10 @@ public class GoodInfoServiceImpl implements GoodInfoService {
 	@Autowired
 	private GoodInfoDao goodInfoDao;
 	
+	/**
+	 * 获取商品信息
+	 */
 	public GoodInfo getGoodInfo(long goodId){
-		return null;
+		return goodInfoDao.get(GoodInfo.class, goodId);
 	}
 }

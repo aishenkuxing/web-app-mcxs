@@ -1,5 +1,7 @@
 package com.cn.website.mcxs.dao;
 
-public interface GoodInfoDao {
+import com.cn.website.mcxs.common.dao.BaseDaoSupport;
+
+public interface GoodInfoDao extends BaseDaoSupport {
 
 }
