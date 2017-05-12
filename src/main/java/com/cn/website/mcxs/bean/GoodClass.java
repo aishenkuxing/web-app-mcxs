@@ -8,7 +8,11 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-
+/**
+ * 商品分类
+ * @author huangjiacheng
+ *
+ */
 @Entity(name = "goods_class")
 public class GoodClass implements Serializable{
 	/**
@@ -19,34 +23,54 @@ public class GoodClass implements Serializable{
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
-	
+	/**
+	 * 分类名称
+	 */
 	@Column(name = "cls_name")
 	private String name;
-	
+	/**
+	 * 分类层级
+	 */
 	@Column(name = "cls_grade")
 	private int grade;
-	
+	/**
+	 * 分类是否结束
+	 */
 	@Column(name = "cls_end")
 	private int end;
-	
+	/**
+	 * 分类备注
+	 */
 	@Column(name = "cls_memo")
 	private String memo;
-	
+	/**
+	 * 分类是否删除
+	 */
 	@Column(name = "cls_del")
 	private int del;
-	
+	/**
+	 * 分类排序
+	 */
 	@Column(name = "cls_order")
 	private int order;
-	
+	/**
+	 * 分类父节点id
+	 */
 	@Column(name = "cls_fid")
 	private long fid;
-	
+	/**
+	 * 分类添加时间
+	 */
 	@Column(name = "cls_addtime")
 	private Date addtime;
-	
+	/**
+	 * 分类更新时间
+	 */
 	@Column(name = "cls_updatetime")
 	private Date updatetime;
-	
+	/**
+	 * 公司编号
+	 */
 	@Column(name = "comid")
 	private Date comid;
 

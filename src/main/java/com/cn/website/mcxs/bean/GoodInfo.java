@@ -11,6 +11,11 @@ import javax.persistence.Id;
 
 import org.joda.time.DateTime;
 
+/**
+ * 商品详情
+ * @author Administrator
+ *
+ */
 @Entity(name = "goods_info")
 public class GoodInfo implements Serializable {
 	
@@ -22,31 +27,49 @@ public class GoodInfo implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
-	
+	/**
+	 * 商品名称
+	 */
 	@Column(name="g_title")
 	private String title;
-	
+	/**
+	 * 商品价格
+	 */
 	@Column(name="g_price")
 	private float price;
-	
+	/**
+	 * 商品原先价格
+	 */
 	@Column(name="g_oldprice")
 	private float oldprice;
-
+	/**
+	 * 商品单位
+	 */
 	@Column(name="g_unit")
 	private String unit;
-
+	/**
+	 * 商品拼音
+	 */
 	@Column(name="g_py")
 	private String py;
-	
+	/**
+	 * 商品添加时间
+	 */
 	@Column(name="g_addtime")
 	private Date addtime;
-
+	/**
+	 * 商品更新时间
+	 */
 	@Column(name="g_updatetime")
 	private Date updatetime;
-
+	/**
+	 * 商品创建时间
+	 */
 	@Column(name="g_createtime")
 	private Date createtime;
-
+	/**
+	 * 商品创建人员
+	 */
 	@Column(name="g_createuser")
 	private long createuser;
 	
