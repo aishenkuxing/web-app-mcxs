@@ -14,11 +14,11 @@ import javax.persistence.Id;
  *
  */
 @Entity(name = "goods_class")
-public class GoodClass implements Serializable{
+public class GoodsClass implements Serializable{
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 60803763950279619L;
+	private static final long serialVersionUID = 1L;
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

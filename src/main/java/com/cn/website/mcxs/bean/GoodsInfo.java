@@ -17,12 +17,12 @@ import org.joda.time.DateTime;
  *
  */
 @Entity(name = "goods_info")
-public class GoodInfo implements Serializable {
+public class GoodsInfo implements Serializable {
 	
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 60803763950279619L;
+	private static final long serialVersionUID = 1L;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

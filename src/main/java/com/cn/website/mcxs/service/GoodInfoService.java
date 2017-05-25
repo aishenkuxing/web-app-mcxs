@@ -2,13 +2,13 @@ package com.cn.website.mcxs.service;
 
 import java.util.List;
 
-import com.cn.website.mcxs.bean.GoodInfo;
+import com.cn.website.mcxs.bean.GoodsInfo;
 
 public interface GoodInfoService {
 	
-	public GoodInfo getGoodInfo(long goodId);
+	public GoodsInfo getGoodInfo(long goodId);
 	
-	public List<GoodInfo> getGoodInfo(String name);
+	public List<GoodsInfo> getGoodInfo(String name);
 
-	long saveGoodInfo(GoodInfo goodInfo);
+	long saveGoodInfo(GoodsInfo goodInfo);
 }

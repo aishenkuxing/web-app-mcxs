@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.cn.website.mcxs.bean.GoodInfo;
+import com.cn.website.mcxs.bean.GoodsInfo;
 import com.cn.website.mcxs.dao.GoodInfoDao;
 
 @Service("goodInfoService")
@@ -19,21 +19,21 @@ public class GoodInfoServiceImpl implements GoodInfoService {
 	/**
 	 * 获取商品信息
 	 */
-	public GoodInfo getGoodInfo(long goodId){
-		return goodInfoDao.get(GoodInfo.class, goodId);
+	public GoodsInfo getGoodInfo(long goodId){
+		return goodInfoDao.get(GoodsInfo.class, goodId);
 	}
 	/**
 	 * 模糊查询商品
 	 */
 	@Override
-	public List<GoodInfo> getGoodInfo(String name) {
+	public List<GoodsInfo> getGoodInfo(String name) {
 		return goodInfoDao.getGoodInfo(name);
 	}
 	/**
 	 * 保存商品
 	 */
 	@Override
-	public long saveGoodInfo(GoodInfo goodInfo) {
+	public long saveGoodInfo(GoodsInfo goodInfo) {
 		 goodInfoDao.saveOrUpdate(goodInfo);
 		 return goodInfo.getId();
 	}

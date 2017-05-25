@@ -8,14 +8,14 @@ import org.hibernate.criterion.Property;
 import org.springframework.stereotype.Repository;
 
 import com.cn.website.common.dao.impl.BaseDaoSupportImpl;
-import com.cn.website.mcxs.bean.GoodInfo;
+import com.cn.website.mcxs.bean.GoodsInfo;
 
 
 @Repository("goodInfoDao")
 public class GoodInfoDaoImpl extends BaseDaoSupportImpl implements GoodInfoDao{
  
 	@SuppressWarnings("unchecked")
-	public List<GoodInfo> getGoodInfo(String name){
+	public List<GoodsInfo> getGoodInfo(String name){
 //		return session.createSQLQuery(
 //				 "SELECT * FROM Person where g_title like :g_title" )
 //			.addEntity( GoodInfo.class )
@@ -26,8 +26,8 @@ public class GoodInfoDaoImpl extends BaseDaoSupportImpl implements GoodInfoDao{
 //		.setParameter("g_title", ""+name+"%")
 //		.getResultList();
 		Session session = currentSession();
-		DetachedCriteria query = DetachedCriteria.forClass(GoodInfo.class).add(Property.forName("title").like("%"+name+"%"));
-		List<GoodInfo> results = query.getExecutableCriteria(session).list();
+		DetachedCriteria query = DetachedCriteria.forClass(GoodsInfo.class).add(Property.forName("title").like("%"+name+"%"));
+		List<GoodsInfo> results = query.getExecutableCriteria(session).list();
 		return results;
 	}
 }
